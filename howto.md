@@ -6,6 +6,17 @@ A aplicação não faz nenhum tipo de comunicação com banco de dados(relaciona
 
 Qual é a locadidade dos usuários que vão acessar a app ?  Escolher o mais próximo possível.
 
+
+# Configurando repositório GIT
+
+## Branch dev.
+
+- [x] Criar a branch
+- [x] Proteger a branch
+  - [x] Apenas pull request com code review
+  - [x] Requer verificação de status antes do merge
+    - [ ] Teste unitário
+
 # Definindo o serviço Azure
 
 Baseado nas considerações iniciais e padrões identificados no projeto foi escolhido Azure App service para fazer o deploy da aplicação.
