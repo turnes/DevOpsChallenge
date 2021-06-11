@@ -23,16 +23,18 @@ jobs:
         include-prerelease: true
 
     - name: Build with dotnet
+      working-directory: src/MyWebApp
       run: dotnet build --configuration Release
 
     - name: dotnet publish
-      run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+      working-directory: src/MyWebApp
+      run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/MyWebApp
 
-    - name: Upload artifact for deployment job
+    - name: Upload artifact for deployment job      
       uses: actions/upload-artifact@v2
       with:
         name: .net-app
-        path: ${{env.DOTNET_ROOT}}/myapp
+        path: ${{env.DOTNET_ROOT}}/MyWebApp
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,7 +50,7 @@ jobs:
         name: .net-app
 
     - name: Deploy to Azure Web App
-      id: deploy-to-webapp
+      id: deploy-to-webapp      
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'dev-nibo'
