@@ -28,7 +28,7 @@ O desafio consiste em criar um ambiente de produção no Azure pronto para receb
 Você deverá criar um fork deste repositório e utilizar o projeto contido na pasta `SRC` para completar o desafio.
 
 ### Requisitos:
-- [ ] Criar uma conta gratuita no [Azure](https://azure.microsoft.com/pt-br/free/)
+- [x] Criar uma conta gratuita no [Azure](https://azure.microsoft.com/pt-br/free/)
 - [ ] Configurar o Azure para dois ambientes: Teste e Produção
 - [ ] Configurar pipeline para integração e deploy contínuo usando o Github Actions ou [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
     - Uma das etapas obrigatórias deve rodar os testes unitários
