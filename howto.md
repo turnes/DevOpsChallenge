@@ -14,11 +14,10 @@ Qual é a locadidade dos usuários que vão acessar a app ?  Escolher o mais pr�
 - [x] Criar a branch
 - [x] Proteger a branch
   - [x] Apenas pull request com code review
-  - [ ] Configurar CODEOWNER
-  - [] Requer verificação de status antes do merge
-    - [] Teste unitário
-    - []
-- Code review template/checklist
+  - [x] Configurar CODEOWNER
+  - [x] Requer verificação de status antes do merge
+    - [x] Teste unitário    
+- [x] Code review template/checklist
 
 # Definindo o serviço Azure
 
