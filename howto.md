@@ -109,6 +109,11 @@ Ambos ambientes
 
 ![alt](/imgs/metrics.png)
 
+
+# Docker e Pipeline para fazer o build no dockerhub.
+- [x] DevOpsChallenge/.github/workflows/build-image.yml
+- [x] Criar secrets para fazer o login
+- [x] Build no push
 # Issues
 
 ## Unit test
@@ -127,8 +132,6 @@ O unit test não passa 100% e impede o merge do pull request. Já que foi config
 ## [Repositório](https://github.com/turnes/DevOpsChallenge)
 
 ## Links
-
-
 
 - Prod
   - https://prod-nibo.azurewebsites.net/weatherforecast
