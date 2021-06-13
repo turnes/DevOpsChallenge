@@ -140,3 +140,5 @@ O unit test não passa 100% e impede o merge do pull request. Já que foi config
   - https://dev-nibo.azurewebsites.net/weatherforecast
   - https://dev-nibo.azurewebsites.net/health
 
+- Docker image
+  - https://hub.docker.com/repository/docker/turnes/nibodevopss
