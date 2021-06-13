@@ -93,3 +93,7 @@ No ambiente teremos apenas um
 ## Unit test
 O unit test não passa 100% e impede o merge do pull request. Já que foi configurado Status check.
 
+- [X] Tests.XUnit
+  - [x] fixed ByAlphabeticalOrder.cs [reference](https://github.com/dotnet/samples/blob/main/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs)
+- [x] Tests.MSTest
+  - [x] fixed ByAlphabeticalOrder.cs
