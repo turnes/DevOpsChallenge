@@ -19,6 +19,16 @@ Qual é a locadidade dos usuários que vão acessar a app ?  Escolher o mais pr�
     - [x] Teste unitário    
 - [x] Code review template/checklist
 
+## Branch prod(master)
+- [x] Criar a branch
+- [x] Proteger a branch
+  - [x] Apenas pull request com code review
+  - [x] Configurar CODEOWNER
+  - [x] Requer verificação de status antes do merge
+    - [x] Teste unitário
+- [x] Code review template/checklist
+
+
 # Definindo o serviço Azure
 
 Baseado nas considerações iniciais e padrões identificados no projeto foi escolhido Azure App service para fazer o deploy da aplicação.
@@ -55,7 +65,6 @@ Seguindo a documentação/recomendação da Azure:
 
 Em cada plano temos diferentes tipos de máquina com configurações de hardware. E seus respectivos preços.
 
-Para fins do desafio e por ser uma conta gratuita utilizarei a versão free, que possui recursos e funcionalidades reduzidas.
 
 ## Dev
 - [x] criar resource group
@@ -76,15 +85,13 @@ No ambiente teremos apenas um
 
 - [x] connectar com o repo GitHub no Deployment Center
 - [x] Configurar o github actions
-  - [x] Build e deploy para o App Service
-  - [x] Unit test
-
-
+  - [x] Push -> Build e deploy para o App Service
+  - [x] Pull request -> Unit test
 ## Prod
 - [x] connectar com o repo GitHub no Deployment Center
 - [x] Configurar o github actions
-  - [x] Build e deploy para o App Service
-  - [x] Unit test
+  - [x] Pull request -> Unit test
+  - [x] Tag -> Build e deploy para o App Service
 
 
 # Issues
