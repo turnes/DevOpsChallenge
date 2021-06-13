@@ -6,7 +6,8 @@ name: Prod-Build-deploy to Azure Web App
 on:
   push:     
     tags:        
-      - '*'           
+      - '*'
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -34,7 +35,7 @@ jobs:
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
       with:
-        app-name: prod-nibo
-        slot-name: v010
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C3C7E4F8D2FF4B1F9A0329E631072C6D }}
+        app-name: 'prod-nibo'
+        slot-name: 'v010'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3dc07fb13dad4400917d2af4c853f2da }}
         package: .
