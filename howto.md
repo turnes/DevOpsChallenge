@@ -97,7 +97,15 @@ No ambiente teremos apenas um
 
 # Funcionalidade Health check
 
+Ambos ambientes
+
 - [x] [Adicionar endpoint](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1)
+- [x] Configurar health check no Azure App Services
+- [x] Criar um alarme. Se estiver sem serviço irá mandar um serviço.
+
+![alt](/imgs/healthcheck.png)
+
+![alt](/imgs/metrics.png)
 
 # Issues
 
@@ -108,3 +116,22 @@ O unit test não passa 100% e impede o merge do pull request. Já que foi config
   - [x] fixed ByAlphabeticalOrder.cs [reference](https://github.com/dotnet/samples/blob/main/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs)
 - [x] Tests.MSTest
   - [x] fixed ByAlphabeticalOrder.cs
+
+
+# Resultado
+
+![alt](/imgs/overview.png)
+
+## [Repositório](https://github.com/turnes/DevOpsChallenge)
+
+## Links
+
+
+
+- Prod
+  - https://prod-nibo.azurewebsites.net/weatherforecast
+  - https://prod-nibo.azurewebsites.net/health
+- Dev
+  - https://dev-nibo.azurewebsites.net/weatherforecast
+  - https://dev-nibo.azurewebsites.net/health
+
