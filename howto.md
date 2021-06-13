@@ -87,11 +87,13 @@ No ambiente teremos apenas um
 - [x] Configurar o github actions
   - [x] Push -> Build e deploy para o App Service
   - [x] Pull request -> Unit test
+- [ ] Publish docker image
 ## Prod
 - [x] connectar com o repo GitHub no Deployment Center
 - [x] Configurar o github actions
   - [x] Pull request -> Unit test
   - [x] Tag -> Build e deploy para o App Service
+- [ ] Publish docker image
 
 
 
