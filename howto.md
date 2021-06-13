@@ -94,6 +94,11 @@ No ambiente teremos apenas um
   - [x] Tag -> Build e deploy para o App Service
 
 
+
+# Funcionalidade Health check
+
+- [x] [Adicionar endpoint](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1)
+
 # Issues
 
 ## Unit test
