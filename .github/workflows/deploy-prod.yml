@@ -38,4 +38,4 @@ jobs:
         app-name: 'prod-nibo'
         slot-name: 'v010'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_3dc07fb13dad4400917d2af4c853f2da }}
-        package: .
+        package: ${{env.DOTNET_ROOT}}/MyWebApp
