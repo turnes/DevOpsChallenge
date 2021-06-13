@@ -14,8 +14,11 @@ Qual é a locadidade dos usuários que vão acessar a app ?  Escolher o mais pr�
 - [x] Criar a branch
 - [x] Proteger a branch
   - [x] Apenas pull request com code review
-  - [x] Requer verificação de status antes do merge
-    - [ ] Teste unitário
+  - [ ] Configurar CODEOWNER
+  - [] Requer verificação de status antes do merge
+    - [] Teste unitário
+    - []
+- Code review template/checklist
 
 # Definindo o serviço Azure
 
@@ -56,6 +59,37 @@ Em cada plano temos diferentes tipos de máquina com configurações de hardware
 Para fins do desafio e por ser uma conta gratuita utilizarei a versão free, que possui recursos e funcionalidades reduzidas.
 
 ## Dev
+- [x] criar resource group
+- [x] criar App Service plan do tipo básico
+- [x] criar App service  
+- [ ] criar terraform 
+## Prod
+- [x] criar resource group
+- [x] criar App Service plan do tipo standard
+- [x] criar App service  
+- [ ] criar terraform
+
+# CI/CD
+
+## Dev
+No ambiente teremos apenas um 
+
+
+- [x] connectar com o repo GitHub no Deployment Center
+- [x] Configurar o github actions
+  - [x] Build e deploy para o App Service
+  - [x] Unit test
 
 
 ## Prod
+- [x] connectar com o repo GitHub no Deployment Center
+- [x] Configurar o github actions
+  - [x] Build e deploy para o App Service
+  - [x] Unit test
+
+
+# Issues
+
+## Unit test
+O unit test não passa 100% e impede o merge do pull request. Já que foi configurado Status check.
+
