@@ -98,6 +98,8 @@ No ambiente teremos apenas um
 # Funcionalidade Health check
 
 - [x] [Adicionar endpoint](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1)
+- [x] Configurar health check no Azure App Services
+- [] Alarme
 
 # Issues
 
