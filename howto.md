@@ -6,6 +6,29 @@ A aplicação não faz nenhum tipo de comunicação com banco de dados(relaciona
 
 Qual é a locadidade dos usuários que vão acessar a app ?  Escolher o mais próximo possível.
 
+
+# Configurando repositório GIT
+
+## Branch dev.
+
+- [x] Criar a branch
+- [x] Proteger a branch
+  - [x] Apenas pull request com code review
+  - [x] Configurar CODEOWNER
+  - [x] Requer verificação de status antes do merge
+    - [x] Teste unitário    
+- [x] Code review template/checklist
+
+## Branch prod(master)
+- [x] Criar a branch
+- [x] Proteger a branch
+  - [x] Apenas pull request com code review
+  - [x] Configurar CODEOWNER
+  - [x] Requer verificação de status antes do merge
+    - [x] Teste unitário
+- [x] Code review template/checklist
+
+
 # Definindo o serviço Azure
 
 Baseado nas considerações iniciais e padrões identificados no projeto foi escolhido Azure App service para fazer o deploy da aplicação.
@@ -42,9 +65,41 @@ Seguindo a documentação/recomendação da Azure:
 
 Em cada plano temos diferentes tipos de máquina com configurações de hardware. E seus respectivos preços.
 
-Para fins do desafio e por ser uma conta gratuita utilizarei a versão free, que possui recursos e funcionalidades reduzidas.
 
 ## Dev
-
-
+- [x] criar resource group
+- [x] criar App Service plan do tipo básico
+- [x] criar App service  
+- [ ] criar terraform 
 ## Prod
+- [x] criar resource group
+- [x] criar App Service plan do tipo standard
+- [x] criar App service  
+- [ ] criar terraform
+
+# CI/CD
+
+## Dev
+No ambiente teremos apenas um 
+
+
+- [x] connectar com o repo GitHub no Deployment Center
+- [x] Configurar o github actions
+  - [x] Push -> Build e deploy para o App Service
+  - [x] Pull request -> Unit test
+## Prod
+- [x] connectar com o repo GitHub no Deployment Center
+- [x] Configurar o github actions
+  - [x] Pull request -> Unit test
+  - [x] Tag -> Build e deploy para o App Service
+
+
+# Issues
+
+## Unit test
+O unit test não passa 100% e impede o merge do pull request. Já que foi configurado Status check.
+
+- [X] Tests.XUnit
+  - [x] fixed ByAlphabeticalOrder.cs [reference](https://github.com/dotnet/samples/blob/main/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs)
+- [x] Tests.MSTest
+  - [x] fixed ByAlphabeticalOrder.cs

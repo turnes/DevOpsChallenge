@@ -1,0 +1,13 @@
+# Deveria ser o dono do projeto ou líder técnico
+*  @turnes
+
+
+# Deveria ser o time de desenvolvimento
+
+src/MyWebApp @turnes
+
+# Deveria ser equipe de QA
+src/Tests* @turnes  
+
+
+
