@@ -75,7 +75,7 @@ Em cada plano temos diferentes tipos de máquina com configurações de hardware
 - [x] criar resource group
 - [x] criar App Service plan do tipo standard
 - [x] criar App service  
-- [ ] criar terraform
+- [] criar terraform
 
 # CI/CD
 
@@ -87,13 +87,13 @@ No ambiente teremos apenas um
 - [x] Configurar o github actions
   - [x] Push -> Build e deploy para o App Service
   - [x] Pull request -> Unit test
-- [ ] Publish docker image
+- [x] Publish docker image
 ## Prod
 - [x] connectar com o repo GitHub no Deployment Center
 - [x] Configurar o github actions
   - [x] Pull request -> Unit test
   - [x] Tag -> Build e deploy para o App Service
-- [ ] Publish docker image
+- [x] Publish docker image
 
 
 
@@ -103,7 +103,7 @@ Ambos ambientes
 
 - [x] [Adicionar endpoint](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1)
 - [x] Configurar health check no Azure App Services
-- [x] Criar um alarme. Se estiver sem serviço irá mandar um serviço.
+- [x] Criar um alarme. Se estiver sem serviço irá mandar um email.
 
 ![alt](/imgs/healthcheck.png)
 
