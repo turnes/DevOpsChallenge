@@ -6,7 +6,8 @@ name: Prod-Build-deploy to Azure Web App
 on:
   push:     
     tags:        
-      - '*'           
+      - '*'
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
