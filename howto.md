@@ -109,6 +109,17 @@ Ambos ambientes
 
 ![alt](/imgs/metrics.png)
 
+
+# Docker e Pipeline para fazer o build no dockerhub.
+- [x] DevOpsChallenge/.github/workflows/build-image.yml
+- [x] Criar secrets para fazer o login
+- [x] Build no push
+
+```bash
+docker run --rm -i -t -p 5000:80 --name=mywebapp turnes/nibodevops:dev
+curl localhost:5000/weatherforecast
+curl localhost:5000/health
+```
 # Issues
 
 ## Unit test
@@ -128,8 +139,6 @@ O unit test não passa 100% e impede o merge do pull request. Já que foi config
 
 ## Links
 
-
-
 - Prod
   - https://prod-nibo.azurewebsites.net/weatherforecast
   - https://prod-nibo.azurewebsites.net/health
@@ -137,3 +146,5 @@ O unit test não passa 100% e impede o merge do pull request. Já que foi config
   - https://dev-nibo.azurewebsites.net/weatherforecast
   - https://dev-nibo.azurewebsites.net/health
 
+- Docker image
+  - https://hub.docker.com/repository/docker/turnes/nibodevops
