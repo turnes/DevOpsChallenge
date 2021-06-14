@@ -57,7 +57,7 @@ Nesse momento a aplicação não está containerizada. São opções para o futu
 
 # Configuração do ambiente Azure App
 
-Uma das primeiras coisas a se considerar em um ambiente Aure App é [App Service Plan](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/#pricing). Linux ou Windows ? Dev ou Prod ? Número de instâncias ? Computação compartilhada, dedicada ou isolada ?
+Uma das primeiras coisas a se considerar em um ambiente Azure App é [App Service Plan](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/#pricing). Linux ou Windows ? Dev ou Prod ? Número de instâncias ? Computação compartilhada, dedicada ou isolada ?
 
 Seguindo a documentação/recomendação da Azure:  
 * Ambiente Dev - mínimo plano básico
@@ -75,13 +75,11 @@ Em cada plano temos diferentes tipos de máquina com configurações de hardware
 - [x] criar resource group
 - [x] criar App Service plan do tipo standard
 - [x] criar App service  
-- [] criar terraform
+- [ ] criar terraform
 
 # CI/CD
 
 ## Dev
-No ambiente teremos apenas um 
-
 
 - [x] connectar com o repo GitHub no Deployment Center
 - [x] Configurar o github actions
